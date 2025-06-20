@@ -44,6 +44,6 @@ jobs:
     - name: Update repo description
       uses: peter-evans/dockerhub-description@v4
       with:
-        username: ${{ vars.DOCKERHUB_USERNAME }}
-        password: ${{ secrets.DOCKERHUB_TOKEN }}
+        username: ${{ vars.DOCKER_HUB_USER }}
+        password: ${{ secrets.DOCKER_HUB_KEY }}
         repository: ${{ vars.DOCKER_HUB_USER }}/firestore-emulator
