@@ -40,3 +40,6 @@ jobs:
         tags: |
           ${{ vars.DOCKER_HUB_USER }}/firestore-emulator:latest
           ${{ vars.DOCKER_HUB_USER }}/firestore-emulator:${{ github.sha }}
+
+    - name: Push Readme
+      run: docker pushrm ${{ vars.DOCKER_HUB_USER }}/firestore-emulator
