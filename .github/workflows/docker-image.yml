@@ -7,10 +7,10 @@ on:
     branches: [ "master" ]
 
 jobs:
-  environment: GithubActionsEnvirouments
   build:
     runs-on: ubuntu-latest
-
+    environment: GithubActionsEnvirouments
+    
     steps:
     - uses: actions/checkout@v4
 
