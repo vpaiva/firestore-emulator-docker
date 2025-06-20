@@ -41,9 +41,6 @@ jobs:
           ${{ vars.DOCKER_HUB_USER }}/firestore-emulator:latest
           ${{ vars.DOCKER_HUB_USER }}/firestore-emulator:${{ github.sha }}
 
-    - name: Push Readme
-      run: docker pushrm
-
     - name: Update repo description
       uses: peter-evans/dockerhub-description@v4
       with:
